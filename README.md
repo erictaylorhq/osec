@@ -19,7 +19,7 @@ In order to produce a ranking one needs to first select a coherent set of bills 
 |  2016 | 482 | 2 | bad |  
 |  2016 | 28 | 3 | bad |  
 
-* _year_ is the year (or session) in which the bill was voted.
+* _year_ is the year (or session) in which the bill was voted on.
 * _roll_ is the roll number of the bill vote.
 * _weight_ is a measure of how important or impactifull the bill is.
 * _grade_ is whether it is a __good__ or __bad__ bill.

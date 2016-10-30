@@ -8,12 +8,21 @@ Create a spreadsheet in google docs, and copy and paste the script into the scri
 
 ## Usage
 
-In order to produce a ranking one needs to first select a coherent set of bills and create a google sheet that has the following information about the bills:
+In order to produce a ranking one needs to first select a coherent set of bills and create a google sheet that is formatted like such:
 
-column 1 is the year of the bill vote
-column 2 is the roll call number of the bill vote
-column 3 is a the bills weight - i.e. some bills have a larger impact and deserve a greater weight
-column 4 is that status of the bill as being good or bad
+|  year | roll | weight | grade |
+|  ------ | ------ | ------ | ------ |
+|  2015 | 37 | 3 | bad |  
+|  2016 | 510 | 1 | bad |  
+|  2016 | 20 | 2 | bad |  
+|  2016 | 12 | 1 | bad |  
+|  2016 | 482 | 2 | bad |  
+|  2016 | 28 | 3 | bad |  
+
+* _year_ is the year (or session) in which the bill was voted.
+* _roll_ is the roll number of the bill vote.
+* _weight_ is a measure of how important or impactifull the bill is.
+* _grade_ is whether it is a __good__ or __bad__ bill.
 
 In order to produce the ranking you have to run the series of functions in the script editor in steps. That is, you have to first run the function _printBillVotes_step1_ and wait for it complete before running the next function with _step2_ in it's name. There are 8 steps. This might seem convoluted but the macro had to be broken up this way to avoid running up against the the timeout limit imposed by Google. That is, app scripts can only run for a fixed amount of time and depending on how many bills are being ranked it is easy to exceed the execution time limit.
 
